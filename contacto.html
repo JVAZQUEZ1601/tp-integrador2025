@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perros</title>
+    <link rel="stylesheet" href="estilos.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+      }
+      form {
+        max-width: 500px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+      }
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #2e8b57;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #246b45;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Pet Shop - CATDOG</h1>
+      <p>¡Todo para tu perro y tu gato!</p>
+    </header>
+
+    <nav>
+      <a href="index.html">INICIO</a>
+      <a href="perros.html">PERROS</a>
+      <a href="gatos.html">GATOS</a>
+      <a href="accesorios.html">ACCESORIOS</a>
+      <a href="servicios.html">SERVICIOS</a>
+      <a href="contacto.html">CONTACTO</a>
+    </nav>
+    <main>
+      <section id="servicios">
+        <h2>🐶 Formulario de Contacto</h2>
+        <div class="services">
+          <!--<article>
+            <h3>Venta de Accesorios</h3>
+            <p>
+              Collares, juguetes, camas, ropa y mucho más para perros y gatos.
+            </p>
+          </article>-->
+          <article>
+            <form action="https://formspree.io/f/xkgjekjg" method="post">
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" required />
+
+              <label for="email">Correo Electrónico *</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="telefono">Teléfono (opcional)</label>
+              <input type="tel" id="telefono" name="telefono" />
+
+              <label for="mensaje">Mensaje (opcional)</label>
+              <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+
+              <button type="submit">Enviar</button>
+            </form>
+          </article>
+          <!--<article>
+            <h3>Veterinaria</h3>
+            <p>
+              Consultas médicas, vacunas y cuidados especiales para tu mascota.
+            </p>
+          </article>-->
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
